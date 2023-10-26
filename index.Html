@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <fieldset>
+    <form id="survey-form">
+        <label id="name-label" for="name" >NAME: <input id="name" name="name" type="text" required placeholder="What is your name?"/></label>
+        <label id="email-label" for="email" >EMAIL: <input id="email" name="email" type="email" required placeholder="3Ma!L@gmail.com"/></label>
+        <label id="number-label" for="number" >NUMBER: <input id="number" name="number" type="number" pattern="[0-9]" min="0" max="11" placeholder="09876543210"/></label>
+        <p>Gender</p>
+        <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        <fieldset name="gender">
+            <legend>Do you need WIfi to live?</Legend>
+            <label for="Yes"><input class="wifi" id="Yes" type="radio" name="Yes" value="Yes"/> Yes</label>
+            <label for="No"><input class="wifi" id="No" type="radio" name="No" value="No"/> No</label>
+        </fieldset>
+        <fieldset name="Lovelife>">
+            <legend>Do you need Lovelife to live?</legend>
+            <label for="Yes"><input class="wifi" id="Yes" type="radio" name="Yes" value="Yes"/> Yes</label>
+            <label for="No"><input class="wifi" id="No" type="radio" name="No" value="No"/> No</label>
+        </fieldset>
+        <fieldset>
+            <legend>Your Hobbies</legend>
+            <label><input id="games" type="checkbox" value="games">Playing Video Games</label>
+            <label><input id="sports" type="checkbox" value="sports">Playing Sports</label>
+            <label><input id="musical" type="checkbox" value="musical">Playing Musical instrument</label>
+            <label><input id="reading" type="checkbox" value="reading">Reading</label>
+            <label><input id="watching" type="checkbox" value="watching">Watching some form of Media Entertainment</label>
+        </fieldset>
+        <fieldset>
+            <label>Comments:
+                <textarea id="Comments" rows="3" cols="30" placeholder="Comments"></textarea>
+              </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </fieldset> 
+</form>
+</body>
+</html>
